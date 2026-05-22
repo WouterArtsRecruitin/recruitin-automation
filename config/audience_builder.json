@@ -1,0 +1,111 @@
+{
+  "campaign": "Recruitin_RPO_TechMidMarket_H1_2026",
+  "objective": "LEAD_GENERATION",
+  "currency": "EUR",
+  "audiences": [
+    {
+      "id": "tof_techmidmarket_cold",
+      "stage": "ToFu",
+      "name": "ToFu - TechMidMarket Cold (NL)",
+      "weekly_budget_eur": 400,
+      "geo": {
+        "countries": ["NL"],
+        "regions": ["Gelderland", "Overijssel", "Noord-Brabant"],
+        "exclude_cities": []
+      },
+      "age_range": [30, 60],
+      "languages": ["nl"],
+      "detailed_targeting": {
+        "industries": [
+          "Oil & gas",
+          "Construction",
+          "Manufacturing",
+          "Industrial automation",
+          "Renewable energy",
+          "Mechanical engineering"
+        ],
+        "job_titles": [
+          "HR Director",
+          "HR Manager",
+          "Operations Director",
+          "Operations Manager",
+          "Plant Manager",
+          "Managing Director",
+          "CFO",
+          "Finance Director"
+        ],
+        "company_size": "50-800",
+        "interests": [
+          "Recruitment process outsourcing",
+          "Human resources",
+          "Talent acquisition",
+          "Workforce planning"
+        ]
+      },
+      "placements": ["facebook_feed", "instagram_feed", "instagram_reels", "messenger_inbox"],
+      "bid_strategy": "LOWEST_COST",
+      "optimization_goal": "LEAD_GENERATION",
+      "primary_creatives": ["rpo_01_problem", "rpo_04_tech_pool", "rpo_07_sector_expert"]
+    },
+    {
+      "id": "mof_lookalike_clients",
+      "stage": "MoFu",
+      "name": "MoFu - Lookalike Recruitin clients (NL, 1%)",
+      "weekly_budget_eur": 300,
+      "geo": { "countries": ["NL"] },
+      "source_audience": "Recruitin_clients_seed_2024_2025",
+      "lookalike_ratio": 0.01,
+      "languages": ["nl"],
+      "placements": ["facebook_feed", "instagram_feed", "instagram_reels"],
+      "bid_strategy": "COST_CAP",
+      "cost_cap_eur": 50,
+      "optimization_goal": "LEAD_GENERATION",
+      "primary_creatives": ["rpo_02_solution", "rpo_15_speed", "rpo_20_partnership"]
+    },
+    {
+      "id": "bof_retargeting_warm",
+      "stage": "BoFu",
+      "name": "BoFu - Retargeting site visitors + video viewers",
+      "weekly_budget_eur": 300,
+      "custom_audiences": [
+        {
+          "type": "WEBSITE_VISITORS",
+          "name": "Recruitin website 30d",
+          "retention_days": 30,
+          "pixel_event": "PageView"
+        },
+        {
+          "type": "VIDEO_VIEWERS",
+          "name": "Watched 50%+ of any RPO video 60d",
+          "retention_days": 60,
+          "video_watch_percentage": 50
+        },
+        {
+          "type": "ENGAGEMENT",
+          "name": "Engaged with FB/IG page 30d",
+          "retention_days": 30
+        }
+      ],
+      "exclusions": ["Existing Recruitin clients", "Past converters last 90d"],
+      "placements": ["facebook_feed", "instagram_feed", "instagram_stories", "instagram_reels"],
+      "bid_strategy": "COST_CAP",
+      "cost_cap_eur": 40,
+      "optimization_goal": "OFFSITE_CONVERSIONS",
+      "primary_creatives": ["rpo_03_guarantee", "rpo_09_roi", "rpo_18_budget_certainty"]
+    }
+  ],
+  "total_weekly_budget_eur": 1000,
+  "target_kpis": {
+    "cpl_eur": "120-150",
+    "ctr_percent": "0.8-1.2",
+    "cpc_eur": "40-50",
+    "lead_to_meeting_rate": 0.30,
+    "meeting_to_deal_rate": 0.25
+  },
+  "test_protocol": {
+    "duration_days": 14,
+    "min_impressions_per_creative": 5000,
+    "kill_rule": "CPL > 200 EUR after 5000 impressions",
+    "scale_rule": "CPL < 100 EUR + min 3 leads -> 2x budget"
+  }
+}
