@@ -1,0 +1,101 @@
+{
+  "ga4_property": {
+    "measurement_id": "G-XXXXXXXXXX",
+    "stream_name": "Recruitin RPO Campaign",
+    "default_currency": "EUR"
+  },
+  "custom_events": [
+    {
+      "event_name": "lead_form_view",
+      "description": "User opens Meta lead form",
+      "parameters": {
+        "campaign_id": "string",
+        "ad_id": "string",
+        "creative_id": "string",
+        "persona": "string"
+      }
+    },
+    {
+      "event_name": "lead_form_submit",
+      "description": "User completes Meta lead form",
+      "parameters": {
+        "campaign_id": "string",
+        "ad_id": "string",
+        "lead_id": "string",
+        "persona": "string",
+        "value_eur": 50
+      },
+      "mark_as_conversion": true
+    },
+    {
+      "event_name": "quick_scan_request",
+      "description": "User requests the free Quick Scan",
+      "parameters": {
+        "source": "string",
+        "company_size": "string"
+      },
+      "mark_as_conversion": true
+    },
+    {
+      "event_name": "meeting_booked",
+      "description": "Lead becomes scheduled meeting in Pipedrive",
+      "parameters": {
+        "lead_id": "string",
+        "deal_id": "string",
+        "owner": "string",
+        "value_eur": 200
+      },
+      "mark_as_conversion": true
+    },
+    {
+      "event_name": "deal_won",
+      "description": "Pipedrive deal moves to Won",
+      "parameters": {
+        "deal_id": "string",
+        "value_eur": "number",
+        "sector": "string"
+      },
+      "mark_as_conversion": true
+    }
+  ],
+  "audiences": [
+    {
+      "name": "Lead_Submitted_Last_30d",
+      "membership_days": 30,
+      "rule": "lead_form_submit event"
+    },
+    {
+      "name": "Quick_Scan_Requested",
+      "membership_days": 90,
+      "rule": "quick_scan_request event"
+    },
+    {
+      "name": "Meeting_Booked",
+      "membership_days": 180,
+      "rule": "meeting_booked event"
+    }
+  ],
+  "utm_template": {
+    "format": "utm_source={source}&utm_medium={medium}&utm_campaign={campaign}&utm_content={ad_id}&utm_term={persona}",
+    "examples": [
+      "?utm_source=meta&utm_medium=paid_social&utm_campaign=rpo_tofu_techmidmarket&utm_content=rpo_01_problem&utm_term=hr_director",
+      "?utm_source=meta&utm_medium=paid_social&utm_campaign=rpo_mofu_lookalike&utm_content=rpo_02_solution&utm_term=operations_manager",
+      "?utm_source=meta&utm_medium=paid_social&utm_campaign=rpo_bofu_retargeting&utm_content=rpo_18_budget_certainty&utm_term=cfo"
+    ]
+  },
+  "dashboards": [
+    {
+      "name": "RPO Campaign - Daily",
+      "frequency": "daily",
+      "delivery": "warts@recruitin.nl + Slack #campaigns",
+      "metrics": ["Impressions", "CTR", "CPC", "Leads", "CPL", "Quick Scan requests", "Meetings booked", "Spend"],
+      "breakdown_dimensions": ["campaign", "audience", "creative", "persona"]
+    },
+    {
+      "name": "RPO Funnel - Weekly",
+      "frequency": "weekly_monday_0800",
+      "delivery": "warts@recruitin.nl",
+      "metrics": ["Lead -> Meeting rate", "Meeting -> Deal rate", "Cost per meeting", "Cost per deal", "Pipeline value added (EUR)"]
+    }
+  ]
+}
