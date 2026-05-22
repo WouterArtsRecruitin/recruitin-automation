@@ -1,0 +1,44 @@
+{
+  "campaign": "Recruitin_RPO_TechMidMarket_H1_2026",
+  "sector": "Oil & Gas, Bouw, Productie, Automation, Renewable Energy",
+  "ica": {
+    "company_size": "50-800 FTE",
+    "regions": ["Gelderland", "Overijssel", "Noord-Brabant"],
+    "personas": ["HR Director", "Operations Manager", "CFO"]
+  },
+  "variants": [
+    { "id": "rpo_01_urgency", "copy": "Openstaande vacatures remmen je groei. Recruitin RPO lost dit structureel op.", "cta": "Maak afspraak", "tone": "Problem-solver", "target_persona": "HR Director" },
+    { "id": "rpo_02_scale", "copy": "Schaal je recruitment zonder extra overhead. RPO doet het voor jou.", "cta": "Leer hoe", "tone": "Efficiency", "target_persona": "Operations Manager" },
+    { "id": "rpo_03_guarantee", "copy": "Gegarandeerd resultaat. Geen recruitment, geen betaling.", "cta": "Bekijk garantie", "tone": "Confidence", "target_persona": "CFO" },
+    { "id": "rpo_04_tech_pool", "copy": "Topkandidaten in jouw sector. RPO bouwt de talent pipeline.", "cta": "Gratis Quick Scan", "tone": "Premium access", "target_persona": "HR Director" },
+    { "id": "rpo_05_time_save", "copy": "Maanden recruitmentwerk in weken. Je HR-team concentreert zich op strategie.", "cta": "Ontdek het model", "tone": "Time-to-value", "target_persona": "Operations Manager" },
+    { "id": "rpo_06_bureau_killer", "copy": "Dure bureaus? Recruitin RPO is de schaalbare vervanger.", "cta": "Vergelijk kosten", "tone": "Cost-focused", "target_persona": "CFO" },
+    { "id": "rpo_07_sector_expert", "copy": "Specialisten in jouw vakgebied. Recruitin kent de markt.", "cta": "Ontmoet het team", "tone": "Expertise", "target_persona": "HR Director" },
+    { "id": "rpo_08_compliance", "copy": "Recruitment op maat. Wij zetten het HR-framework op.", "cta": "Bekijk processen", "tone": "Trust", "target_persona": "Operations Manager" },
+    { "id": "rpo_09_roi", "copy": "ROI meetbaar. Elke hire trackbaar. Geen budgetverlies meer.", "cta": "Bekijk KPI's", "tone": "Data-driven", "target_persona": "CFO" },
+    { "id": "rpo_10_gap_filling", "copy": "Capaciteitsgat in je recruitment? Recruitin vult het in 2 weken.", "cta": "Start vandaag", "tone": "Urgency", "target_persona": "HR Director" },
+    { "id": "rpo_11_global_local", "copy": "Lokale expertise, schaalbare processen. Dat is RPO van Recruitin.", "cta": "Meld je aan", "tone": "Positioning", "target_persona": "Operations Manager" },
+    { "id": "rpo_12_talent_magnet", "copy": "De beste talenten kiezen Recruitin. Zij helpen jou groeien.", "cta": "Gratis intro", "tone": "Prestige", "target_persona": "HR Director" },
+    { "id": "rpo_13_flex_scale", "copy": "Flexibel schalen. Minder vacatures? Minder kosten.", "cta": "Ontdek model", "tone": "Flexibility", "target_persona": "CFO" },
+    { "id": "rpo_14_compliance_plus", "copy": "100% HR-compliance. Wij dragen alle verantwoordelijkheid.", "cta": "Voorwaarden", "tone": "Safety", "target_persona": "Operations Manager" },
+    { "id": "rpo_15_speed", "copy": "Vacature -> Kandidaat -> Hired in 4 weken. Guaranteed.", "cta": "Bekijk track record", "tone": "Speed-focused", "target_persona": "HR Director" },
+    { "id": "rpo_16_quality_filter", "copy": "Alleen gekwalificeerde kandidaten. Geen verspilde interviews.", "cta": "Leer screening proces", "tone": "Quality", "target_persona": "Operations Manager" },
+    { "id": "rpo_17_culture_fit", "copy": "Wij vinden niet alleen skills. Ook cultural fit matcht perfect.", "cta": "Ontdek methode", "tone": "Holistic", "target_persona": "HR Director" },
+    { "id": "rpo_18_budget_certainty", "copy": "Vaste kosten. Geen verborgen bureaukosten. Transparantie guaranteed.", "cta": "Offerte aanvragen", "tone": "Transparency", "target_persona": "CFO" },
+    { "id": "rpo_19_sector_data", "copy": "Marktdata in je hand. Salarissen, trends, doelgroepen. Alles.", "cta": "Gratis rapport", "tone": "Intelligence", "target_persona": "HR Director" },
+    { "id": "rpo_20_partnership", "copy": "Niet een bureau. Een partner in jouw groei.", "cta": "Start gesprek", "tone": "Partnership", "target_persona": "Operations Manager" }
+  ],
+  "metadata": {
+    "created": "2026-05-22",
+    "language": "NL",
+    "char_count": "20-40",
+    "platform": "Meta (Facebook/Instagram)",
+    "estimated_ctr": 0.8,
+    "estimated_cpc": 45,
+    "budget_allocation": {
+      "hr_director": 40,
+      "operations_manager": 35,
+      "cfo": 25
+    }
+  }
+}
